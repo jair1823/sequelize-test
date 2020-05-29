@@ -1,0 +1,30 @@
+{
+  "name": "test-sequelize",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev":"nodemon src/index.js --exec babel-node",
+    "migrate":"babel-node src/migrate/index.js",
+    "build": "babel src/ --out-dir build",
+    "start": "node build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.10.1",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.2.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.11"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.1",
+    "@babel/node": "^7.10.1",
+    "@babel/preset-env": "^7.10.1",
+    "nodemon": "^2.0.4"
+  }
+}
